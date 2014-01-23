@@ -12,14 +12,12 @@ var HoneyBadger = {
 	called:function(){
 		console.log("Honey Badger don't care")
 	},
-
 }
 
 var snake = {
 	head: 1,
 	rattle: 1,
 	alive: true,
-
 }
 
 var BillyBob = {
@@ -32,5 +30,4 @@ var BillyBob = {
 		x.alive=false
 		return "Yeehaw, bo"
 	},
-
 }
