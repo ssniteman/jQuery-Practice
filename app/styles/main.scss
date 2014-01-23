@@ -1,6 +1,24 @@
 @import "compass/css3";
 
+.header {
+    margin: 0 auto;
+    height: 50px;
+    text-align: center;
+    background-color: black;
+    line-height: 50px;
+}
 
+h1 {
+    color: white;
+    font-size: 20px;
+    font-size: bold;
+    text-shadow: gray 0 1px;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
 
 .expandable {
     width: 100px;
@@ -12,16 +30,17 @@
 }
 
 .activate-box {
-    margin-top: 30px;
+    margin: 50px auto;
 }
 
-.box {
+.boxone {
     width: 300px;
     height: 0px;
     overflow: hidden;
     background-color: black;
     color: white;
-    margin: 100px auto;
+    margin: 50px;
+
 
     @include transition(all 1s ease);
 }
@@ -34,6 +53,8 @@
 .boxtwo {
     width: 300px;
     height: 300px;
+    text-align: center;
+    line-height: 300px;
      background-color: black;
     color: white;
     -webkit-transition: all 3s ease;    display: inline-block;
@@ -45,37 +66,43 @@
     height: 300px;
     background-color: black;
     color: white;
-    margin-left: 300px;
+    margin-left: 330px;
 }
 
 
 .boxthree {
     width: 300px;
     height: 300px;
-     background-color: green;
+    background-color: green;
     color: white;
-    margin-top: 30px;
+    margin: 50px auto;
+    text-align: center;
+    line-height: 300px;
 }
 
-.four {
-    margin: 50px auto;
+.textfour {
     font-size: 20px;
     color: gray;
+    text-align: center;
+    margin-top: 50px;
 }
 
-.fifth {
+.five {
     margin: 50px auto;
     color: red;
     font-size: 20px;
 }
 
-.fifth-box {
+.fivebox {
     width: 300px;
     height: 300px;
     overflow: hidden;
     font-size: 12px;
     color: white;
     background-color: black;
+    margin: 50px auto;
+    text-align: center;
+    line-height: 300px;
 }
 
 
@@ -96,10 +123,14 @@
     background-color: black;
     -webkit-transition: all 2s ease;
     color: white;
+    margin: 50px auto;
+    text-align: center;
+    line-height: 200px;
     
     &.active {
         display: block;
         background-color: black;
+        margin: 50px auto;
     }
 }
 
@@ -113,7 +144,6 @@
 
 
 .seven {
-    margin-top: 30px;
     width: 200px;
     height: 200px;
     background-color: blue;
@@ -122,6 +152,7 @@
     font-size: 16px;
     line-height: 200px;
     transition: all 1s ease;
+    margin: 300px auto;
 }
 
 .seven:hover {
@@ -129,7 +160,7 @@
 }
 
 .eightcolorchange {
-    margin-top: 70px;
+    margin: 50px auto;
     width: 200px;
     height: 200px;
     background-color: green;
@@ -163,21 +194,28 @@ display: inline-block;
 padding: 10px 15px;  
 cursor: pointer;  
 }  
-  
-ul.tabs li.tablink{  
-background: #ededed;  
-color: #222;  
-}  
-  
-.tab-content{  
-display: none;  
-background: #ededed;  
-padding: 15px;  
-}  
 
-.tab-content.current{  
-display: inherit;  
-}  
+.tablinkone {
+    opacity: 1;
+}
+
+.tablinktwo {
+    opacity: 1;
+
+    &.opacity {
+        opacity: .3;
+    }
+}
+
+.tablinkthree {
+    opacity: 1; 
+
+    &.opacity {
+        opacity: .3; 
+    }
+}
+  
+
 
 
 // SLIDE ME
@@ -216,10 +254,208 @@ display: inherit;
 }
 
 .email {
-    width: 100px;
-    height: 15px;
-    margin-top: 30px;
+    width: 200px;
+    height: 20px;
+   margin: 50px auto;
+   display: block;
+   font-size: 14px;
+   color: silver;
 }
+
+.emailfocus {
+    width: 200px;
+    height: 20px;
+   margin: 50px auto;
+   display: block;
+   font-size: 14px;
+   color: silver;
+}
+
+
+.nine {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    line-height: 200px;
+    transition: all 1s ease;
+    margin: 50px auto;
+}
+
+.nine:hover {
+    width: 400px;
+}
+
+.ten {
+    margin: 50px auto;
+    width: 200px;
+    height: 200px;
+    background-color: #FFEC54;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    line-height: 200px;
+}
+
+.eleven {
+    margin: 50px auto;
+    width: 200px;
+    height: 200px;
+    background-color: #8E0CE8;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    line-height: 200px;
+}
+
+.twelve {
+    margin: 50px auto;
+    width: 200px;
+    height: 200px;
+    background-color: #E87C0C;
+    opacity: 1;
+    text-align: center;
+    line-height: 200px;
+    color: white;
+}
+
+.twelve.active {
+    width: 200px;
+    height: 200px;
+    background-color: #E87C0C;
+    opacity: .5;
+}
+
+.tabpractice {
+    margin: 50px auto;
+}
+
+
+.thirteen {
+    width: 200px;
+    height: 200px;
+    margin: 50px 190px;
+    opacity: 1;
+    background-color: gray; 
+    display:inline-block;
+    
+    line-height: 200px;
+    color: white;
+    text-align: center;
+}
+
+.fourteen {
+    width: 200px;
+    height: 200px;
+     margin: 50px auto;
+     background-color: gray;
+     display: inline-block;
+   
+
+    &.opacity {
+        opacity: .3;
+    }
+}
+
+.square {
+    display: inline-block;
+    margin: 50px auto;
+    left: 0;
+    width: 40px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    @include transition(all 1s linear);
+
+    &.active {
+        left: 180px;
+    }
+}
+
+
+
+.circle {
+    display: inline-block;
+    margin: 50px 52px;
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    border-radius: 50px;
+    position: absolute;
+    @include transition(all 1s linear 1s);
+
+    &.active {
+        margin-left: 450px;
+    }
+}
+
+.onandoff {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    margin: 250px auto;
+    text-align: center;
+    line-height: 300px;
+
+    &.gone {
+        background-color: green;
+    }
+}
+
+.tabone {
+    width: 70px;
+    height: 40px;
+    background-color: gray;
+    opacity: .3;
+    margin: -25px auto;
+    display: block;
+    color: black;
+    text-align: center;
+
+
+    &.opacity {
+        opacity: 1;
+    }
+}
+
+.tabinfo {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    background-color: gray;
+    color: black;
+    margin: 25px auto;
+
+    &.active {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+.twentyfive {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    background-color: red;
+    color: white;
+    -webkit-transition: all 2s ease;    
+    display: inline-block;
+
+}
+
+.twentyfive.active {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: white;
+    margin-left: 375px;
+}
+
 
 
 

@@ -15,7 +15,7 @@ $('.expandable').click(function(){
 
 	$(this).addClass('expanded');	
 
-})
+});
 
 
 
@@ -37,37 +37,37 @@ $('.boxtwo').click(function(){
 	console.log('it slides');
 
 	$(this).addClass('active'); 
-})
+});
 
 
 $('.boxthree').click(function(){
 	console.log('it fades');
 
 	$(this).fadeOut(1000);
-})
+});
 
 
-$('.four').click(function(){
+$('.textfour').click(function(){
 	console.log('disappear');
 
 	$(this).hide(2000);
-})
+});
 
 
-$('.fifth').click(function(){
-  if ( $( 'div:fifth-box' ).is( ':hidden' ) ) {
-    $('fifth-box').show('slow');
+$('.five').click(function(){
+  if ( $('div:fivebox').is('hidden') ) {
+    $('fivebox').show('slow');
   } else {
-    $( "fifth-box" ).slideUp(1000);
+    $('fivebox').slideUp(1000);
  }
-})
+});
 
 
 $('.six').click(function(){
 	console.log('appears');
 	
 	$('.sixinfo').addClass('active');
-})
+});
 
 
 
@@ -79,12 +79,25 @@ $('.six').click(function(){
 $('.seven').hover(function(){
 	console.log('expands');
 	$(this).addClass('hover')
-})
+});
+
+
+
 
 $('.eightcolorchange').click(function(){
 	console.log('color change');
 	$(this).addClass('active')
-})
+});
+
+
+
+
+$('.tablinkone').click(function(){
+	console.log('other tabs gets lighter');
+
+	$('.tablinktwo').addClass('opacity');
+	$('.tablinkthree').addClass('opacity');
+});
 
 
 
@@ -92,19 +105,15 @@ $('.eightcolorchange').click(function(){
 
 
 
-$('.tabs').ready(function(){  
-  
-$('ul.tabs li').click(function(){  
-var tab_id = $(this).attr('tablink');  
-  
-$('ul.tabs li').removeClass('current');  
-$('.tab-content').removeClass('current');  
-  
-$(this).addClass('current');  
-$("#"+tab_id).addClass('current');  
-})  
-  
-})  
+
+
+
+
+
+
+
+
+	
 
 
 
@@ -116,27 +125,102 @@ $('.slide-up').click(function(){
 
     $('slideme').slideUp('slow');
 
-})
+});
 
 $('.slide-down').click(function(){
 	console.log('slide down');
 
     $('slideme').slideUp();
 
-})
+});
 
 $('.slide-toggle').click(function(){
 	console.log('slide toggle');
 
     $('slideme').slideToggle('fast');
 
-})
+});
              
-$('email').click(function(){
+$('.email').blur(function(){
 	console.log('email blur');
 
-	$(this).blur();
-})
+	$(this).css('color', 'gray');
+});
+
+$('.email').click(function(){
+	console.log('email blur');
+
+	$(this).focus();
+});
+
+
+$('.nine').hover(function(){
+	console.log('expands');
+
+	$(this).addClass('hover')
+});
+
+$('.ten').click(function(){
+	console.log('slides up');
+	
+	$(this).slideUp('slow')
+});
+
+$('.eleven').click(function(){
+	console.log('slides up');
+	
+	$(this).slideToggle('slow')
+});
+ 
+$('.twelve').click(function(){
+	console.log('color change');
+	$(this).addClass('active')
+});
+
+$('.thirteen').click(function(){
+	console.log('color change');
+	
+	$('.fourteen').addClass('opacity');
+});;
+
+
+
+
+$('.square').click(function(){
+	console.log('moves');
+	
+	$(this).addClass('active');
+	$('.circle').addClass('active');
+
+});
+
+$('.onandoff').mouseleave(function(){
+	console.log('hovers on and off');
+
+	$(this).removeClass('gone');
+});
+
+$('.tabone').click(function(){
+	console.log('box appears and tab gets darker');
+
+	$(this).addClass('opacity');
+	$('.tabinfo').addClass('active');
+});
+
+
+
+$('.tablinkone').click(function(){
+	console.log('box appears and tab gets darker');
+
+	$(this).addClass('opacity');
+	$('.tabinfo').addClass('active');
+});
+
+$('.twentyfive').click(function(){
+	console.log('it slides and toggles back');
+
+	$(this).toggleClass('active'); 
+});
 
 
 
