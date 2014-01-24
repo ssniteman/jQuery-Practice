@@ -20,44 +20,17 @@ h1 {
     margin: 0 auto;
 }
 
-.expandable {
-    width: 100px;
-    @include transition(all 1s ease);
 
-    &.expanded  {
-    width: 200px;
-    }
-}
-
-.activate-box {
-    margin: 50px auto;
-}
-
-.boxone {
-    width: 300px;
-    height: 0px;
-    overflow: hidden;
-    background-color: black;
-    color: white;
-    margin: 50px;
-
-
-    @include transition(all 1s ease);
-}
-
-.box.active {
-    width: 400px;
-    height: 400px;
-}
 
 .boxtwo {
+    margin-top: 30px;
     width: 300px;
     height: 300px;
     text-align: center;
     line-height: 300px;
      background-color: black;
     color: white;
-    -webkit-transition: all 3s ease;    display: inline-block;
+    @include transition (all 3s ease);    display: inline-block;
 
 }
 
@@ -215,43 +188,6 @@ cursor: pointer;
     }
 }
   
-
-
-
-// SLIDE ME
-
-.slide-up {
-    width: 100px;
-    height: 25px;
-    background-color: gray;
-    color: white;
-    display: inline-block;
-    margin-top: 30px;
-}
-
-.slide-down {
-    width: 100px;
-    height: 25px;
-    background-color: gray;
-    color: white;
-    display: inline-block;
-}
-
-.slide-toggle {
-    width: 100px;
-    height: 25px;
-    background-color: gray;
-    color: white;
-    display: inline-block;
-}
-
-.slideme {
-    width: 300px;
-    height: 300px;
-    color: white;
-    background-color: gray;
-    margin-top: 5px;
-}
 
 .email {
     width: 200px;
@@ -455,6 +391,92 @@ cursor: pointer;
     color: white;
     margin-left: 375px;
 }
+
+.doubleclick {
+    width: 200px;
+    height: 100px;
+    background-color: green;
+    color: white;
+    font-size: 14px;
+    margin: 50px auto;
+    text-align: center;
+    line-height: 100px;
+
+    &.active {
+        background-color: blue;
+    }
+}
+
+.textchange {
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    font-size: 14px;
+    margin: 50px auto;
+    text-align: center;
+    line-height: 100px;
+    @include transition (all .3s ease);
+
+    &.active {
+        text-shadow: black 0 -2px;
+        font-size: 20px;
+    }
+}
+
+.textchangetwo {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    color: white;
+    font-size: 22px;
+    margin: 50px auto;
+    text-align: center;
+    line-height: 300px;
+    @include transition (all 3s ease);
+
+    &.active {
+        font-size: 4px;
+    }
+}
+
+.expandable {
+    margin: 50px 378px;
+    width: 100px;
+    @include transition(all 1s ease);
+
+    &.expanded  {
+    width: 200px;
+    }
+}
+
+.delete {
+     width: 200px;
+    height: 200px;
+    background-color: yellow;
+    color: black;
+    font-size: 18px;
+    margin: 50px auto;
+    text-align: center;
+    line-height: 200px;
+
+    &.active {
+        background-color: white;
+        color: white;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

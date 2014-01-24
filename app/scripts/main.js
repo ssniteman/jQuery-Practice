@@ -1,38 +1,4 @@
 
-$('.activate-box').click(function(){
-	console.log('the button clicked');
-
-	$('.box').addClass('active');
-})
-
-
-
-
-
-
-$('.expandable').click(function(){
-	console.log('focused on an input!');
-
-	$(this).addClass('expanded');	
-
-});
-
-
-
-
-$('.submit').click(function (){
-	console.log('focused on an input!');
-
-	$('input').each(function(){
-		if ($(this).val() == '') {
-			$(this).addClass('error');
-		}
-	});
-});
-
-
-
-
 $('.boxtwo').click(function(){
 	console.log('it slides');
 
@@ -99,47 +65,6 @@ $('.tablinkone').click(function(){
 	$('.tablinkthree').addClass('opacity');
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-
-
-
-
-
-
-$('.slide-up').click(function(){
-	console.log('slide up');
-
-    $('slideme').slideUp('slow');
-
-});
-
-$('.slide-down').click(function(){
-	console.log('slide down');
-
-    $('slideme').slideUp();
-
-});
-
-$('.slide-toggle').click(function(){
-	console.log('slide toggle');
-
-    $('slideme').slideToggle('fast');
-
-});
              
 $('.email').blur(function(){
 	console.log('email blur');
@@ -223,9 +148,37 @@ $('.twentyfive').click(function(){
 });
 
 
+$('.doubleclick').dblclick(function(){
+	console.log('double clicks and changes color')
+
+	$(this).addClass('active');
+});
+
+$('.textchange').click(function(){
+	console.log('text gets shadow')
+
+	$(this).addClass('active');
+});
+
+$('.textchangetwo').click(function(){
+	console.log('text gets smaller')
+
+	$(this).addClass('active');
+});
 
 
+$('.expandable').click(function(){
+	console.log('focused on an input!');
 
+	$(this).addClass('expanded');	
+
+});
+
+$('.delete').click(function(){
+	console.log('all will disappear')
+
+	$(this).addClass('active');
+});
 
 
 
